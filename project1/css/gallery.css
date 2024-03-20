@@ -1,0 +1,42 @@
+h2 {
+text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.wrapper p {
+  text-align: center;
+  padding: 1rem;
+}
+
+.gallery-container figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.gallery-container figcaption {
+  padding: .5rem;
+}
+
+@media (max-width: 650px) {
+  .gallery-container {
+    flex-wrap: wrap;
+  }
+
+  .gallery-item {
+    flex-basis: 100%;
+  }
+}
+
+.wrapper {
+  background: #FFF;
+  padding: 6rem;
+}

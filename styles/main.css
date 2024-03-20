@@ -6,3 +6,76 @@
   font-family: "Libre Franklin", sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
+:root {
+  --main-bg-color: #5C6D70;
+  --header-color: #F6F4F3;
+  --wrapper-bg-color: #F6F4F3;
+  --wrapper-border-color: #DB4C40;
+  --nav-bg-color: #272727;
+  --nav-links-color: #F6F4F3;
+  --footer-text-color: #F6F4F3;
+}
+
+body {
+  background: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  margin: 2rem;
+}
+
+h1 {
+  padding: 1rem 0;
+  color: var(--header-color);
+}
+
+ul li {
+  padding: .5rem;
+}
+
+a:visited {
+  color: black;
+}
+
+nav {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: flex-start;
+  background: var(--nav-bg-color);
+  padding: 1rem;
+}
+
+nav a {
+  padding-right: 1rem;
+  text-decoration: none;
+  color: var(--nav-links-color);
+}
+
+nav a:visited {
+  color: var(--nav-links-color);
+}
+
+.wrapper {
+  margin: 0 2rem;
+  padding: 2rem;
+  border-top: 8px solid var(--wrapper-border-color);
+  background: var(--wrapper-bg-color);
+}
+
+footer {
+  background: var(--footer-bg-color);
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 2rem;
+  color: var(--footer-text-color);
+}

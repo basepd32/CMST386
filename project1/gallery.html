@@ -5,37 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/project1/css/gallery.css">
     <title>CMST386 Project 1 - Gallery</title>
   </head>
   <body>
     <header>
-      <h1>CMST 386 - Project 1</h1>
+      <h1>CMST386 - Project 1</h1>
       <nav>
         <a href="/index.html"><p>Home</p></a>
         <a href="/project1/project1.html"><p>Project 1</p></a>      </nav>
     </header>
 
     <main>
-      <h2>Photo Gallery</h2>
-      <figure>
-        <a href="/project1/images/cat-large1.webp"><img src="/project1/images/cat-thumb1.png" alt="Cat looking at camera"></a>
-        <figcaption>A cat looking at the camera</figcaption>
-      </figure>
-      
-      <figure>
-        <a href="/project1/images/cat-large2.webp"><img src="/project1/images/cat-thumb2.png" alt="Cat wrapped in blanket"></a>
-        <figcaption>A cat wrapped in a blanket</figcaption>
-      </figure>
-      
-      <figure>
-        <a href="/project1/images/cat-large3.webp"><img src="/project1/images/cat-thumb3.png" alt="Cat thinking"></a>
-        <figcaption>A cat pondering</figcaption>
-      </figure>
-
-      <figure>
-        <a href="/project1/images/cat-large4.webp"><img src="/project1/images/cat-thumb4.png" alt="Cat resting"></a>
-        <figcaption>A cat resting in the sun</figcaption>
-      </figure>
+      <div class="wrapper">
+        <h2>Photo Gallery</h2>
+        <p>Here is a cute collection of cat photos. You may click to enlarge.</p>
+          <div class="gallery-container">
+            <figure class="gallery-item">
+              <a href="/project1/images/cat-large1.webp"><img src="/project1/images/cat-thumb1.png" alt="Cat looking at camera"></a>
+              <figcaption>A cat looking at the camera</figcaption>
+            </figure>
+        
+            <figure class="gallery-item">
+              <a href="/project1/images/cat-large2.webp"><img src="/project1/images/cat-thumb2.png" alt="Cat wrapped in blanket"></a>
+              <figcaption>A cat wrapped in a blanket</figcaption>
+            </figure>
+        
+            <figure class="gallery-item">
+              <a href="/project1/images/cat-large3.webp"><img src="/project1/images/cat-thumb3.png" alt="Cat thinking"></a>
+              <figcaption>A cat pondering</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <a href="/project1/images/cat-large4.webp"><img src="/project1/images/cat-thumb4.png" alt="Cat resting"></a>
+              <figcaption>A cat resting in the sun</figcaption>
+            </figure>
+          </div>
+      </div>
     </main>
+    <footer>
+      &copy2024 Patrick DiMisa
+    </footer>
   </body>
 </html>
