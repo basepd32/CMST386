@@ -1,0 +1,153 @@
+/* global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+:root {
+  --main-bg-color: #5C6D70;
+  --header-color: #F6F4F3;
+  --wrapper-bg-color: #F6F4F3;
+  --wrapper-border-color: #DB4C40;
+  --nav-bg-color: #272727;
+  --nav-links-color: #F6F4F3;
+  --footer-text-color: #F6F4F3;
+}
+
+header {
+  margin: 2rem;
+}
+
+h1 {
+  padding: 1rem 0;
+  color: var(--header-color);
+}
+
+nav {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: flex-start;
+  background: var(--nav-bg-color);
+  padding: 1rem;
+}
+
+nav a {
+  padding-right: 1rem;
+  text-decoration: none;
+  color: var(--nav-links-color);
+}
+
+nav a:visited {
+  color: var(--nav-links-color);
+}
+
+nav .dropbtn {
+  color: white;
+  font-size: 1em;
+  border: none;
+  background-color: var(--nav-bg-color);
+}
+
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--nav-bg-color);
+  min-width: 100%;
+  overflow: auto;
+  z-index: 1;
+  padding-block: .5rem;
+}
+
+nav .dropdown-content a {
+  color: var(--nav-links-color);
+  text-decoration: none;
+  padding: .5rem 1rem;
+  display: block;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {
+  background: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.wrapper > * {
+  padding: 1rem;
+}
+
+.wrapper p {
+  margin: 0  0 1.5rem 0;
+  padding: 1rem;
+}
+
+.wrapper {
+  margin: 0 2rem;
+  padding: 2rem;
+  background: #FFF;
+  /* padding: 6rem; */
+  border-top: 8px solid var(--wrapper-border-color);
+  background: var(--wrapper-bg-color);
+}
+
+ul li {
+  padding: .5rem;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+.gallery-container h2, p {
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.gallery-container figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+}
+  
+.gallery-container figcaption {
+  padding: .5rem;
+}
+  
+@media (max-width: 650px) {
+  .gallery-container {
+    flex-wrap: wrap;
+  }
+  
+  .gallery-item {
+    flex-basis: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 2rem;
+  background: var(--footer-bg-color);
+  color: var(--footer-text-color);
+}
