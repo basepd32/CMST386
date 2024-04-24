@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <nav>
-    <h1><a href="../index.html">Home</a></h1>
-    <h1><a href="project3.html">Project 3 Home</a></h1>
+    <!-- top navigation -->
+    <div class="mobile-nav">
+      <a href="../index.html" class="logo active">CMST386 Project Directory </a>
+      <div id="hamburgerLinks">
+        <a class="mobile-links" href="project3.html">Home</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </nav>
   <ul class="breadcrumb">
     <li><a class="active breadcrumb-links" href="project3.html">Project 3 Home</a></li>
@@ -31,5 +39,7 @@
     <li><h3>Report 2</h3></li>
     <li><h3>Report 3</h3></li>
   </ul>
+
+  <script src="main.js"></script>
 </body>
 </html>

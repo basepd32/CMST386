@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Preprocessing</title>
 </head>
 <body>
   <nav>
-    <h1><a href="../index.html">Home</a></h1>
-    <h1><a href="project3.html">Project 3 Home</a></h1>
+    <!-- top navigation -->
+    <div class="mobile-nav">
+      <a href="../index.html" class="active logo">CMST386 Project Directory</a>
+      <div id="hamburgerLinks">
+        <a class="mobile-links" href="project3.html">Home</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </nav>
   
+  <!-- breadcrumb navigation -->
   <ul class="breadcrumb">
     <li><a href="project3.html">Home</a></li>
     <li><a class="breadcrumb-links active" href="preprocessing.html">Preprocessing</a></li>
@@ -20,7 +30,7 @@
   <!-- How I implemented SASS: I used a vscode extension called "Live Sass Compiler"
   to compile my .scss files into .css files. It features live compilation viewing which
   was very useful. I used SASS variables for custom colors that were used 
-  more than once for easy adjustment. -->
+  more than once for easy adjustment. I also used nested styles for cleaner code. -->
   
   <p>Explain the ways to implement preprocessing (client-side vs server-side) (minimum 50 words). Define and describes the mechanisms used in either LESS or SASS: mixins, variables, functions, operators, nested variables (minimum 100 words)</p>
 
@@ -54,5 +64,7 @@
       <p>lorem ipsum</p>
     </li>
   </ul>
+  
+  <script src="main.js"></script>
 </body>
 </html>

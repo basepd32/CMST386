@@ -10,3 +10,14 @@ for (var i = 0; i < breadcrumblinks.length; i++) {
     this.className += " active";
   });
 }
+
+// hamburger menu icon interaction showing/hiding navigation links
+
+function hamburgerMenu() {
+  var x = document.getElementById("hamburgerLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
