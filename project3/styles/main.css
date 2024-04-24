@@ -1,0 +1,42 @@
+/* global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* breadcrumb navigation */
+ul.breadcrumb {
+  padding: .75rem 1rem;
+  list-style: none;
+  background-color: #f0f0f0;
+
+  & li {
+    display: inline;
+    font-size: 1.2em;
+  }
+
+  & li+li:before {
+    padding-inline: 8px;
+    color: black;
+    content: "\007C";
+    font-weight: 900;
+  }
+
+/* link styling */
+  li a {
+    text-decoration: none;
+
+      &:visited {
+        color: black;
+      }
+
+      &:hover {
+        color: slateblue;
+      }
+
+      &.active {
+        color: slateblue;
+      }
+  }
+}
