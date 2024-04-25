@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Project 3 Home</title>
 </head>
 <body>
   <nav>
     <!-- top navigation -->
-    <div class="mobile-nav">
+    <div class="hamburger-nav">
       <a href="../index.html" class="logo active">CMST386 Project Directory </a>
       <div id="hamburgerLinks">
         <a class="mobile-links" href="project3.html">Home</a>
@@ -24,21 +28,53 @@
     <li><a class="breadcrumb-links" href="preprocessing.html">Preprocessing</a></li>
   </ul>
     
-  <p>Explain the importance of responsive design and its impact on the target audience. (minimum 50 words).
-        
-  Google Analytics provides a wealth of data for free to help assess the success of websites. 
-  Describe three different kinds of reports that will tell you what information your target audience is accessing (minimum 100 words).</p>
+  <div class="responsive-design-container">
+    
+  </div>     
 
-  <p>Responsive design is an important element of any project due to x.</p>
+  <!-- Google Analytics provides a wealth of data for free to help assess the success of websites. 
+  Describe three different kinds of reports that will tell you what information your target audience is accessing (minimum 100 words) -->
+  <p class="intro">Responsive design is an important element of any project, as it ensures that the content that is being displayed on your site is digestable and
+    pleasing to the eye, regardless of the device that the user is viewing it on. It can have a big impact on the target audience
+    by accounting for who may be accessing your site and where they may be accessing it from, so that user experience does not suffer.
+  </p>
 
-  <h2>Helpful Reports</h2>
-  <p>In order to determine what information your target audience is accessing, there are a few data sources that prove invaluable.</p>
+  <div class="reports-container">
+    <table class="reports-table">
+      <th>In order to determine what information your target audience is accessing, and that you are reaching this intended audience, there are a few data sources
+        that prove invaluable. Some examples are provided below.
+      </th>
 
-  <ul>
-    <li><h3>Report 1</h3></li>
-    <li><h3>Report 2</h3></li>
-    <li><h3>Report 3</h3></li>
-  </ul>
+      <tr>
+        <td>
+          <h3>Audience Overview</h3>
+          <p>This report shows basic information like number of users that visited your site,
+            how many times they may have visited, and what language their browser is using.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h3>Audience Demographics</h3>
+          <p>This report has basic information at a glance such as age and gender,
+            but more detailed information can be accessed such as age groups, interests,
+            and statstics about each of these.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <h3>Audience Geography</h3>
+          <p>As a default, this report shows breakdown by country, but you may also view a
+            breakdown by city.
+          </p>
+        </td>
+      </tr>
+  </div>
+
+  <a href="preprocessing.html" class="btn-container"><span class="btn">Learn Preprocessing</span></a>
 
   <script src="main.js"></script>
 </body>

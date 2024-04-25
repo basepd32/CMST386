@@ -3,26 +3,41 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+// body styling
+body {
+  background-color: #333;
+  color: white;
+
+  & a {
+    color: white;
+
+    &:visited {
+      color: white;
+    }
+  }
 }
 
 /* global variables */
-$accent1: #6a5acd;
+$accent1: #9fe2e9;
+$accent2: rgb(250, 147, 109);
+$accent3: rgb(96, 96, 254);
 
-/* mobile navigation bar with hamburger menu */
-.mobile-nav {
+/* navigation bar with hamburger menu */
+.hamburger-nav {
   overflow: hidden;
   background-color: #333;
   position: relative;
-  $mobile-nav-padding: 2.5rem;
+  $hamburger-nav-padding: 2rem;
 
   & #hamburgerLinks {
   display: none;
   }
 
   & a {
-    color: white;
-    padding: $mobile-nav-padding;
+    padding: $hamburger-nav-padding;
     text-decoration: none;
     font-size: 1em;
     display: block;
@@ -53,7 +68,7 @@ $accent1: #6a5acd;
 ul.breadcrumb {
   padding: .25rem 1rem;
   list-style: none;
-  background-color: #f0f0f0;
+  background-color: #2c2c2c;
 
   & li {
     display: inline;
@@ -62,7 +77,7 @@ ul.breadcrumb {
 
   & li+li:before {
     padding-inline: 8px;
-    color: black;
+    color: white;
     content: "\2044";
     font-weight: 900;
   }
@@ -71,10 +86,6 @@ ul.breadcrumb {
   & li a {
     text-decoration: none;
 
-      &:visited {
-        color: black;
-      }
-
       &:hover {
         color: $accent1;
       }
@@ -82,5 +93,151 @@ ul.breadcrumb {
       &.active {
         color: $accent1;
       }
+  }
+}
+
+// container for repsonsive design content
+.responsive-design-container {
+  padding: 2rem;
+}
+
+// preprocessing introduction card
+.intro {
+  background-color: #595959;
+  padding: 4rem;
+  margin-bottom: 8rem;
+  border-bottom: 2px solid $accent1;
+}
+    
+// container for reports content
+.reports-container {
+  margin: 0 10%;
+
+  & table {
+    background-color: #2c2c2c;
+    text-align: left;
+    margin: 4rem auto;
+    border-radius: 2rem;
+  }
+
+  & th {
+    border-bottom: 2px solid $accent1
+  }
+
+  & th,
+    td {
+    padding: 1rem;
+  }
+
+  & tr:nth-of-type(odd) {
+    background-color: hsl(0, 0%, 25%);
+  }
+
+  & h3 {
+    padding: 1rem 0 .5rem;
+  }
+
+  & li {
+    list-style-type: none;
+  }
+
+  & a {
+    text-decoration: underline;
+    color: white;
+
+    &:hover {
+      color: $accent1;
+    }
+  }
+}  
+
+// call to action button
+.btn-container {
+  margin: 0 auto;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  
+  & .btn {
+    display: inline-block;
+    width: inherit;
+    background: linear-gradient($accent2, $accent3);
+    filter: drop-shadow(0px 12px 8px #282828);
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 2rem;
+
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+}
+
+// container for SASS mechanism content
+.mechanism-container {
+  max-width: 80%;
+  margin: clamp(5%, 7.5%, 10%) 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  
+
+  //introductory information
+  & .intro {
+    grid-column: 1 / 3;
+    margin-bottom: 4rem;
+  }
+
+  // title
+  & h2 {
+    grid-column: 1 / 3;
+    text-align: center;
+    background-color: #242424;
+    padding: 1rem;
+    border-radius: 1rem;
+
+  }
+
+  // mechanism cards
+  & .card {
+    list-style-type: none;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #3b3b3b;
+  }
+}
+
+// bookmark link
+.back-to-top {
+  text-decoration: none;
+  padding: 1rem;
+  margin-top: 2rem;
+  
+  display: none;
+  position: relative;
+  bottom: 0;
+
+  &:hover {
+    color: $accent1;
+  }
+}
+
+// tablet sizes and below
+@media screen and (max-width: 769px) {
+  .reports-table {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card {
+      grid-column: 1 / 3;
+  }
+}
+
+// mobile sizes
+@media screen and (max-width: 500px) {
+  .back-to-top {
+    display: block;
   }
 }
