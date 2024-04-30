@@ -6,9 +6,14 @@
 }
 
 :root {
+  --gutter: 2rem;
   --mono-lightest: hsl(0, 0%, 94%);
   --accent1: hsl(108, 15%, 40%);
   --accent1-darker: hsl(108, 15%, 30%);
+  --hair: hsl(170, 53%, 42%);
+  --skin: hsl(342, 88%, 75%);
+  --sun: hsl(19, 100%, 66%);
+  --bath: hsl(236, 56%, 46%);
 }
 
 body {
@@ -39,7 +44,7 @@ nav .nav-bottom {
   display: flex;
   width: 100%;
   align-items: center;
-  padding: 1.25rem 3rem;
+  padding: 1.25rem var(--gutter);
 }
 nav .nav-top {
   justify-content: space-between;
@@ -132,7 +137,7 @@ nav #sliding-nav #close {
 
 footer {
   margin-top: auto;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem var(--gutter);
   background-color: var(--accent1);
   color: white;
 }

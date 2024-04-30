@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  // border: 1px solid orange;
+}
+
+aside {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  flex-direction: column;
+  padding-inline-start: var(--gutter);
+  text-align: center;
+
+  & .aside-items {
+    margin-block-start: 2rem;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
+
+main {
+  padding-inline-start: var(--gutter);
+  width: 80%;
+  margin-block-end: 4rem;
+
+  & h3 {
+    color: var(--accent1);
+  }
+
+  & .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-inline-end: var(--gutter);
+  
+    & .flex-item {
+      margin-block: 1rem;
+    }
+  }
+}

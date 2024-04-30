@@ -1,0 +1,167 @@
+main {
+  
+  & .hero-container {
+    color: var(--accent1-darker);
+    background-image: url("/media/shampoo_hair_shower.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-color: var(--mono-lightest);
+    padding: 12rem var(--gutter);
+    margin-block-end: 6rem;
+
+    & .hero-content {
+      background-color: white;
+      padding: 2rem;
+      width: clamp(50%, 55%, 60%);
+    }
+
+    & h2 {
+      padding-bottom: .5rem;
+    }
+
+    & p {
+      padding-block-end: 3rem;
+    }
+
+    & .hero-btn {
+      font-size: 1em;
+      padding: 1rem 8rem;
+      color: white;
+      text-decoration: none;
+      border-radius: 1em;
+      background: var(--accent1);
+      text-transform: capitalize; 
+    }
+  }
+
+  & .flex-container {
+    display: flex;
+  }
+
+  .best-seller-container {
+    margin-block: 4rem;
+    padding: 2rem var(--gutter);
+
+    & h2 {
+      padding-block-start: 1rem;
+      text-align: center;
+    }
+
+    & img {
+      max-width: 100%;
+    }
+  }
+
+  & .triple-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-block-start: 2rem;
+    padding: 0 var(--gutter);
+
+    & i {
+      padding: 1rem;
+      font-size: 1.5em;
+      color: var(--accent1);
+    }
+
+    text-align: center;
+    color: var(--accent1-darker);
+    & h3 {
+      padding-inline: 1rem;
+    }
+
+    & .flex-item {
+      padding: 2rem;
+      width: calc(100% / 3);
+
+      & h3 {
+        padding-block-start: 1rem;
+        padding-block-end: .5rem;
+      }
+
+      & a {
+        color: var(--accent1-darker);
+        text-decoration: none;
+        &:visited {
+          color: var(--accent1-darker);
+        }
+      }
+    }
+  }
+
+  .two-column {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 1rem var(--gutter);
+    margin-block: 3rem;
+    padding-block: 2rem;
+    align-items: center;
+
+    & h3,
+    p,
+    a {
+      padding: 2rem;
+    }
+
+    & .grid-item {
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+      & h3 {
+        padding-bottom: .5rem;
+      }
+      & p {
+        padding-bottom: 2.5rem;
+      }
+      & a {
+        margin-inline-start: 2rem
+      }
+
+    & .landing-btn {
+      font-size: 1em;
+      padding: 1em 3em;
+      color: white;
+      text-decoration: none;
+      border-radius: 1em;
+      background: var(--accent1);
+      text-transform: capitalize; 
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .triple-card {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+
+      & .flex-item {
+        width: 100%;
+      }
+    }
+
+    .hero-container {
+      & .hero-btn {
+        padding: 1rem 2rem;
+      }
+    }
+
+    .two-column {
+      grid-template-columns: 1fr;
+
+      & h3 {
+        padding-block-end: 0;
+      }
+
+      & a {
+        padding: 2rem;
+      }
+    }
+  }
+}

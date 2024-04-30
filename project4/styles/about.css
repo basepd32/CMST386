@@ -1,0 +1,41 @@
+.intro-container {
+  text-align: center;
+  background-color: var(--accent1);
+  color: white;
+}
+.intro-container h2 {
+  padding-block-start: 2rem;
+}
+.intro-container p {
+  padding: 2rem;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding: 3rem var(--gutter);
+  margin-block: 3rem;
+  align-items: center;
+}
+.two-column p {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+.two-column .grid-item img {
+  width: 100%;
+  height: 100%;
+  padding-inline: 2rem;
+}
+.two-column h3 {
+  padding-block-end: 1rem;
+  padding-inline-start: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .two-column h3 {
+    padding-block: 1rem;
+  }
+}/*# sourceMappingURL=about.css.map */

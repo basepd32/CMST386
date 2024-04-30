@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+}
+
+aside {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  flex-direction: column;
+  padding-inline-start: var(--gutter);
+  text-align: center;
+}
+aside .aside-items {
+  margin-block-start: 2rem;
+}
+aside .aside-items img {
+  width: 100%;
+}
+
+main {
+  padding-inline-start: var(--gutter);
+  width: 80%;
+  margin-block-end: 4rem;
+}
+main h3 {
+  color: var(--accent1);
+}
+main .flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-inline-end: var(--gutter);
+}
+main .flex-container .flex-item {
+  margin-block: 1rem;
+}/*# sourceMappingURL=profile.css.map */
