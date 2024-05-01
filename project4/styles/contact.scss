@@ -1,0 +1,58 @@
+main {
+  display: flex;
+  padding-inline: var(--gutter);
+  margin-block: 4rem;
+  justify-content: center;
+  align-items: center;
+
+  & form {
+    color: var(--accent1-darker);
+
+    & legend {
+      font-weight: 500;
+      font-size: 1.125em;
+      padding-inline: .8rem;
+      margin-bottom: 1rem;
+    }
+
+    & fieldset {
+      padding-inline: 1rem;
+    }
+
+    & label {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin: .5rem 0;
+      font-weight: 400;
+    }
+
+    & input {
+      margin-bottom: 1rem;
+    }
+    
+    & p {
+      margin-block: 1rem;
+    }
+
+    & .input-container {
+      display: inline-block;
+      padding-inline: .5rem;
+    }
+    
+    & textarea {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+    & #submit {
+      background-color: var(--accent1);
+      color: white;
+      border: none;
+      border-radius: 1em;
+      padding: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+}

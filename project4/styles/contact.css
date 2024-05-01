@@ -1,0 +1,49 @@
+main {
+  display: flex;
+  padding-inline: var(--gutter);
+  margin-block: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+main form {
+  color: var(--accent1-darker);
+}
+main form legend {
+  font-weight: 500;
+  font-size: 1.125em;
+  padding-inline: 0.8rem;
+  margin-bottom: 1rem;
+}
+main form fieldset {
+  padding-inline: 1rem;
+}
+main form label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0.5rem 0;
+  font-weight: 400;
+}
+main form input {
+  margin-bottom: 1rem;
+}
+main form p {
+  margin-block: 1rem;
+}
+main form .input-container {
+  display: inline-block;
+  padding-inline: 0.5rem;
+}
+main form textarea {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+main form #submit {
+  background-color: var(--accent1);
+  color: white;
+  border: none;
+  border-radius: 1em;
+  padding: 1rem;
+  cursor: pointer;
+  width: 100%;
+}/*# sourceMappingURL=contact.css.map */

@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Sunscreen, Suncare, Suntan, Lotion">
-    <meta name="description" content="Shop for Lumina suncare products, including sunscreen and suntan lotion.">
+    <meta name="keywords" content="Contact, Help, Form">
+    <meta name="description" content="Get in contact with Lumina for help with any issues, or to have your questions answered by our dedicated support team.">
     <meta name="copyright" content="By Patrick DiMisa">
     <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/sunscreen.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Sunscreen</title>
+    <title>Contact</title>
   </head>
   <body>
     <nav>
@@ -50,7 +50,7 @@
         <div class="card nav-links"><a href="bath.html">Bath</a></div>
         <span class="seperator">&#9475;</span>
         <div class="card nav-links"><a href="sunscreen.html">Sunscreen</a></div>
-
+        
         <div class="gcse-search"></div>
       </div>
 
@@ -85,7 +85,7 @@
           <i class="fa-solid fa-xmark"></i>
         </a>
         <div class="gcse-search"></div>
-
+        
         <a href="project4.html">Home</a>
         <a href="shop-all.html">Shop All</a>
         <a href="hair-care.html">Hair Care</a>
@@ -94,46 +94,93 @@
         <a href="sunscreen.html">Sunscreen</a>
       </div>
     </nav>
-    <header>
-        <h2>Sunscreen</h2>
-        <p>Protection from the rays.</p>
-    </header>
+    <main>
+      <form name="contactForm" action="mailto:pdimisa@student.umgc.edu" class="flex-item" onsubmit="return validateForm()" method="post">
+        
+        <fieldset>
 
-    <div class="container">
-        <aside>
-            <a href="#spf-30" class="flex-item">SPF 30</a>
-            <a href="#spf-50" class="flex-item">SPF 50</a>
-            <a href="#suntan-lotion" class="flex-item">Suntan Lotion</a>
-        </aside>
-        <main>
-            
-            <h3 id="spf-30">SPF 30</h3>
-            <h4>Gentler lotion.</h4>
-            <div class="flex-item">
-                <img src="media/spf-30.jpg" alt="spf 30 sunscreen">
-                <p>Non-scented.</p>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
+          <legend>Your Info</legend>
 
-            <h3 id="spf-50" class="line">SPF 50</h3>
-            <h4>For full protection.</h4>
-            <div class="flex-item">
-                <img src="media/spf-50.jpg" alt="spf 50 sunscreen">
-                <p>Non-scented.</p>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
+          <label for="fname">First Name</label>
+          <div class="form-indexes" tabindex="1">
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name..." required>
+          </div>
+          
+          <label for="lname">Last Name</label>
+          <div class="form-indexes" tabindex="2">
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name..." required>
+          </div>
+          
+          <label for="email">Email</label>
+          <div class="form-indexes" tabindex="3">
+            <input type="text" id="email" name="email" placeholder="Enter your email...">
+          </div>
 
-            <h3 id="suntan-lotion" class="line">Suntan Lotion</h3>
-            <h4>Beautifully bronze.</h4>
-            <div class="flex-item">
-                <img src="media/suntan-lotion.jpg" alt="suntan lotion">
-                <p>Non-scented.</p>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
+          <label for="phone">Email</label>
+          <div class="form-indexes" tabindex="4">
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number...">
+          </div>
+        </fieldset>
 
-        </main>
-    </div>
+        <p>
+          Is this your first time contacting us about this issue?
+        </p>
+        <div class="input-container">
+          <label for="yes">Yes</label>
+          <div class="form-indexes" tabindex="5">
+            <input type="radio" class="radio-btns" id="yes" name="fav_language" value="HTML">
+          </div>
+        </div>
+          
+        <div class="input-container">
+          <label for="no">No</label>
+          <div class="form-indexes" tabindex="6">
+            <input type="radio" class="radio-btns" id="no" name="fav_language" value="CSS">
+          </div>
 
+        </div>
+
+        <label for="issue">Select your issue:</label>
+        <select name="issue" id="issue">
+
+            <option value="select" class="form-indexes" tabindex="7">Select one...</option>
+
+            <option value="shipping" class="form-indexes" tabindex="8">Shipping</option>
+
+            <option value="billing" class="form-indexes" tabindex="9">Billing</option>
+
+            <option value="defective-product" class="form-indexes" tabindex="10">Defective Product</option>
+
+            <option value="general-question" class="form-indexes" tabindex="11">General Question</option>
+
+        </select>
+
+        <label for="msg">Message</label>
+        <div class="form-indexes" tabindex="12">
+          <textarea name="msg" id="msg" cols="50" rows="4" placeholder="Type your message..."></textarea>
+        </div>
+
+        <p>How Should We Contact You?</p>
+        <div class="input-container">
+          <label for="checkbox-email">Email</label>
+          <div class="form-indexes" tabindex="13">
+            <input type="checkbox" id="checkbox-email" value="email">
+          </div>
+        </div>
+
+        <div class="input-container">
+          <label for="checkbox-phone">Phone</label>
+          <div class="form-indexes" tabindex="14">
+            <input type="checkbox" id="checkbox-phone" value="phone">
+          </div>
+        </div>
+
+        <div class="form-indexes" tabindex="15">
+          <input type="submit" id="submit" value="Submit">
+        </div>
+
+      </form>
+    </main>
     <footer>
 
       <div class="grid-container">

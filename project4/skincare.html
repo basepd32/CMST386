@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Skincare, Lotion, Moisturizer">
+    <meta name="description" content="Shop for Lumina skincare products, including deodorant, body spray, and moisturizer.">
+    <meta name="copyright" content="By Patrick DiMisa">
+    <meta name="robots" content="index,follow">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/skincare.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Skincare</title>
   </head>
@@ -42,6 +50,8 @@
         <div class="card nav-links"><a href="bath.html">Bath</a></div>
         <span class="seperator">&#9475;</span>
         <div class="card nav-links"><a href="sunscreen.html">Sunscreen</a></div>
+
+        <div class="gcse-search"></div>
       </div>
 
       <div class="mobile-nav" id="nav">
@@ -74,6 +84,8 @@
         <a href="javascript:void(0)" id="close" onclick="closeNav()">
           <i class="fa-solid fa-xmark"></i>
         </a>
+        <div class="gcse-search"></div>
+
         <a href="project4.html">Home</a>
         <a href="shop-all.html">Shop All</a>
         <a href="hair-care.html">Hair Care</a>
@@ -98,7 +110,7 @@
             <h3 id="deodorant">Deodorant</h3>
             <h4>Smelling fresh is what we do best.</h4>
             <div class="flex-item">
-                <img src="media/deodorant1.png" alt="">
+                <img src="media/deodorant1.png" alt="deodorant">
                 <p>Fresh Spring</p>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
@@ -106,7 +118,7 @@
             <h3 id="body-spray" class="line">Body Spray</h3>
             <h4>For extra fragrance.</h4>
             <div class="flex-item">
-                <img src="media/body-spray1.jpg" alt="">
+                <img src="media/body-spray1.jpg" alt="body spray">
                 <p>Lilac</p>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
@@ -114,7 +126,7 @@
             <h3 id="moisturizer" class="line">Moisturizer</h3>
             <h4>Smooth skin for all.</h4>
             <div class="flex-item">
-                <img src="media/moisturizer1.jpg" alt="">
+                <img src="media/moisturizer1.jpg" alt="moisturizer">
                 <p>Fresh Falls</p>
                 <a href="#" class="btn">Add to Cart</a>
             </div>
@@ -162,12 +174,15 @@
       </div>
 
       <div class="privacy-container">
-        <h4 class="flex-item" id="js-clock">Placeholder JS clock</h4>
+        <div class="flex-item" id="js-clock">
+          <div id="clock">12:00:00</div>
+        </div>
         <p class="flex-item">&copy;2024 Lumina</p>
         <a href="privacy-policy.html" target="_blank" class="flex-item footer-links">Privacy Policy</a>
       </div>
 
     </footer>
     <script src="main.js"></script>
+    <script async src="https://cse.google.com/cse.js?cx=345c3672ebd604870"></script>
   </body>
 </html>
